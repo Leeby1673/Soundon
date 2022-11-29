@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="manageCRUD.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <title>聲浪設管系統</title>
+</head>
+
+<body>
+  <!-- 上方導覽列 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">設備狀態瀏覽</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">新增刪除設備</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 新增刪除列 -->
+  <div class="container managerForm">
+    <!-- 管理員新增刪除按鈕 -->
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#add-equipment" type="button" role="tab" aria-controls="pills-home" aria-selected="true">新增設備</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#delete-equipment" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">刪除設備</button>
+      </li>
+    </ul>
+
+    <!-- 管理員新增刪除頁面 -->
+    <div class="tab-content" id="pills-tabContent">
+
+      <!-- 新增 -->
+      <div class="tab-pane fade show active managerForm" id="add-equipment" role="tabpanel" aria-labelledby="add-equipment-tab" tabindex="0">
+        <form class="row">
+          <div class="col-md-12">
+            <label for="inputaddequipment" class="form-label">設備型別</label>
+            <select id="inputaddequipment" class="form-select">
+              <option selected>錄音介面 i-000</option>
+              <option>麥克風 m-000</option>
+              <option>耳機 e-000</option>
+              <option>線材 w-000</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="inputtype" class="form-label">產品型號</label>
+            <input type="text" class="form-control" id="inputtype">
+          </div>
+          <div class="col-6">
+            <label for="inputproductnum" class="form-label">產品編號</label>
+            <input type="text" class="form-control" id="inputproductnum" placeholder="x-xxx">
+          </div>
+          <div class="col-4">
+            <label for="inputadddate" class="form-label">建檔日</label>
+            <input type="text" class="form-control" id="inputadddate" placeholder="YYYY-MM-DD">
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">確定</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- 刪除 -->
+      <div class="tab-pane fade managerForm" id="delete-equipment" role="tabpanel" aria-labelledby="delete-equipment-tab" tabindex="0">
+        <form class="row">
+          <div class="col-md-12">
+            <label for="inputaddequipment" class="form-label">設備型別</label>
+            <select id="inputaddequipment" class="form-select">
+              <option selected>錄音介面 i-000</option>
+              <option>麥克風 m-000</option>
+              <option>耳機 e-000</option>
+              <option>線材 w-000</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="inputtype" class="form-label">產品型號</label>
+            <input type="text" class="form-control" id="inputtype">
+          </div>
+          <div class="col-6">
+            <label for="inputproductnum" class="form-label">產品編號</label>
+            <input type="text" class="form-control" id="inputproductnum" placeholder="x-xxx">
+          </div>
+          <!-- <div class="col-4">
+            <label for="inputadddate" class="form-label">建檔日</label>
+            <input type="text" class="form-control" id="inputadddate" placeholder="YYYY-MM-DD">
+          </div> -->
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">確定</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- bootstrap javascripe -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="rentEquipment.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <title>聲浪設管系統</title>
+</head>
+
+<body>
+  <!-- 上方導覽列 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">設備狀態瀏覽</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">新增刪除設備</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 設備狀態列 -->
+  <div class="container">
+    <nav>
+      <!-- Button trigger modal -->
+      <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          新增租借
+        </button>
+
+        <!-- Modal 跳出視窗 -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">設備外借登記作業</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <!-- Modal 內容 -->
+              <div class="modal-body">
+                <form class="row">
+                  <div class="col-md-12">
+                    <label for="rentperson" class="form-label">租借人員</label>
+                    <h1 id="rentperson" class="form-control">Leeby 陳宏威</h1>
+                    <!-- <input type="email" class="form-control" id="inputEmail4"> -->
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputdate" class="form-label">日期</label>
+                    <input type="text" class="form-control" id="inputdate" placeholder="YYYY-MM-DD">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputhour" class="form-label">時</label>
+                    <!-- <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St"> -->
+                    <select class="form-select" id="inputhour" aria-label="Default select example">
+                      <option selected>00</option>
+                      <option value="1">01</option>
+                      <option value="2">02</option>
+                      <option value="3">03</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputminute" class="form-label">分</label>
+                    <!-- <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor"> -->
+                    <select class="form-select" id="inputminute" aria-label="Default select example">
+                      <option selected>00</option>
+                      <option value="1">01</option>
+                      <option value="2">02</option>
+                      <option value="3">03</option>
+                    </select>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="inputequipment" class="form-label">租借設備</label>
+                  </div>
+                  <div class="col-md-6">
+                    <select id="inputequipment" class="form-select">
+                      <option selected>介面 i-000</option>
+                      <option value="1">麥克風 m-000</option>
+                      <option value="2">耳機 e-000</option>
+                      <option value="3">線材 w-000</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <select id="inputequipment" class="form-select">
+                      <option selected>介面 i-000</option>
+                      <option value="1">麥克風 m-000</option>
+                      <option value="2">耳機 e-000</option>
+                      <option value="3">線材 w-000</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <select id="inputequipment" class="form-select">
+                      <option selected>介面 i-000</option>
+                      <option value="1">麥克風 m-000</option>
+                      <option value="2">耳機 e-000</option>
+                      <option value="3">線材 w-000</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <select id="inputequipment" class="form-select">
+                      <option selected>介面 i-000</option>
+                      <option value="1">麥克風 m-000</option>
+                      <option value="2">耳機 e-000</option>
+                      <option value="3">線材 w-000</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <select id="inputequipment" class="form-select">
+                      <option selected>介面 i-000</option>
+                      <option value="1">麥克風 m-000</option>
+                      <option value="2">耳機 e-000</option>
+                      <option value="3">線材 w-000</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <select id="inputequipment" class="form-select">
+                      <option selected>介面 i-000</option>
+                      <option value="1">麥克風 m-000</option>
+                      <option value="2">耳機 e-000</option>
+                      <option value="3">線材 w-000</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <select id="inputequipment" class="form-select">
+                      <option selected>介面 i-000</option>
+                      <option value="1">麥克風 m-000</option>
+                      <option value="2">耳機 e-000</option>
+                      <option value="3">線材 w-000</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <select id="inputequipment" class="form-select">
+                      <option selected>介面 i-000</option>
+                      <option value="1">麥克風 m-000</option>
+                      <option value="2">耳機 e-000</option>
+                      <option value="3">線材 w-000</option>
+                    </select>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="Textarea1" class="form-label">說明</label>
+                    <textarea class="form-control" id="Textarea1" rows="3"></textarea>
+                  </div>
+                </form>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary">登記</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button"
+          role="tab" aria-controls="nav-home" aria-selected="true">全部</button>
+        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button"
+          role="tab" aria-controls="nav-profile" aria-selected="false">出貨中</button>
+      </div>
+    </nav>
+    <!-- 表單 -->
+    <div class="tab-content" id="nav-tabContent">
+      <!-- 全部 -->
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">狀態</th>
+              <th scope="col">全部</th>
+              <th scope="col">設備</th>
+              <th scope="col">說明</th>
+              <th scope="col">產編</th>
+              <th scope="col">租借日期</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 出借中 -->
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">狀態</th>
+              <th scope="col">出借中</th>
+              <th scope="col">設備</th>
+              <th scope="col">說明</th>
+              <th scope="col">產編</th>
+              <th scope="col">租借日期</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- 分頁 -->
+  <div>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- bootstrap javascripe -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

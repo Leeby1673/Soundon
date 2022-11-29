@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/signin.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>聲浪設管系統</title>
+</head>
+<body class="text-center">
+  <div id="prompt" class="">
+    <p id="promptText" class="">必須填入使用者帳號密碼</p>
+  </div>
+  <!-- <div id="" class="d-flex"> -->
+    <main class="form-signin w-100 m-auto">
+      <form method="post" id="inputForm">
+        <!-- 公司圖片 -->
+        <!-- <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    
+        <div class="form-floating">
+          <!-- input 使用在 form 裡的話, name 屬性很重要, 攸關取得 form 內的資料能否抓到 input 數值 -->
+          <input type="email" class="form-control" id="floatingInput userAccount" name="account" placeholder="name@example.com">
+          <!-- label 的 for 和 input id 綁在再一起證明他們是一組的 -->
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword userPassword" name="password" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+    
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit" id="signIn">Sign in</button>
+        <!-- <p class="mt-5 mb-3 text-muted">&copy; 2017–2022</p> -->
+        <p id="demo"></p>
+        <button type="button" id="demogogo">測試JS</button>
+      </form>
+    </main>
+  <!-- </div> -->
+
+    
+    <script src="../static/js/script.js"></script>
+        
+</body>
+</html>
